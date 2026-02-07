@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Someone Special 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="lockScreen">
+  <h2>🔒 Enter the Secret Password</h2>
+  <input type="password" id="passwordInput" placeholder="Hint: Her name 😉">
+  <button onclick="unlock()">Unlock 💖</button>
+</div>
+
+<div class="container hidden" id="mainContent">
+
+  <h1>🎂 Happy Birthday Ayushi 🎂</h1>
+
+  <!-- Image Slider -->
+  <div class="slider">
+    <img id="slide" src="img/1.jpg">
+  </div>
+
+  <!-- Music -->
+  <audio id="bgMusic" src="music.mp3" loop></audio>
+
+  <button class="revealBtn" onclick="playMusic()">🎵 Play Music</button>
+
+
+  <!-- Secret Message -->
+  <button class="revealBtn" onclick="revealMessage()">💌 Reveal Secret</button>
+  <p id="secretMessage" class="hidden">
+    You’re the reason smiles come easy these days 😌  
+    Stay mine, always 💖
+  </p>
+
+</div>
+
+<canvas id="confetti"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
